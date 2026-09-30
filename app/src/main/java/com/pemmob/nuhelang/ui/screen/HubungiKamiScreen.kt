@@ -1,7 +1,5 @@
 package com.pemmob.nuhelang.ui.screen
 
-import android.widget.Space
-import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -61,7 +59,7 @@ fun HubungiKamiScreen(navController: NavController){
                     navigationIconContentColor = MaterialTheme.colorScheme.onPrimary
                 ),
                 navigationIcon = {
-                    IconButton(onClick = {navController?.popBackStack()}) {
+                    IconButton(onClick = {navController.popBackStack()}) {
                         Icon(
                             painter = painterResource(id = R.drawable.back_icon),
                             contentDescription = "Back Icon"
